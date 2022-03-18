@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: eureka-client
+server:
+  port: 7777
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:16950/eureka
